@@ -1,4 +1,5 @@
-module.exports = ({ env }) => ({
+export default
+({env}) => ({
   upload: {
     config: {
       provider: 'strapi-provider-upload-supabase',
@@ -26,12 +27,6 @@ module.exports = ({ env }) => ({
         removeAttributesKey: true,
         removeDataKey: true,
       },
-    },
-  },
-  ckeditor: {
-    enabled: true,
-    config: {
-      plugin: {},
     },
   },
 })
